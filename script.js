@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const temperatureDisplay = document.getElementById("temperature");
   const descriptionDisplay = document.getElementById("description");
   const errorMessage = document.getElementById("error-message");
-  const API_KEY = "8961b0c96e1f8f3717777c388fb5c342";
+  API_KEY = "8961b0c96e1f8f3717777c388fb5c342";
 
   getWeatherButton.addEventListener("click", async () => {
     const cityName = cityInput.value.trim();
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function displayWeatherData(data) {
     const { name, main, weather } = data;
     cityNameDisplay.textContent = name;
-    temperatureDisplay.textContent = `Temperature:${main.temp}`;
+    temperatureDisplay.textContent = `Temperature:${main.temp} Degree Celsius`;
     descriptionDisplay.textContent = `Weather: ${weather[0].description}`;
 
     weatherInfo.classList.remove("hidden");

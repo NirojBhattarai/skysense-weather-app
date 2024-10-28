@@ -1,4 +1,3 @@
-/* styles.css */
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +6,8 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #121212;
+  background-image: url(https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg);
+  background-size: cover;
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-  background-color: #1e1e1e;
+  background-color: #07575786;
   padding: 20px;
   border-radius: 10px;
   width: 400px;
@@ -29,7 +29,7 @@ h1 {
   font-size: 24px;
 }
 
-p {
+#slogan {
   margin-bottom: 20px;
   font-size: small;
 }
@@ -53,7 +53,7 @@ input[type="text"] {
 button {
   width: 25%;
   padding: 10px;
-  background-color: #6200ea;
+  background-color: #0008ea;
   border: none;
   border-radius: 5px;
   color: #fff;
@@ -62,11 +62,23 @@ button {
 }
 
 button:hover {
-  background-color: #3700b3;
+  background-color: #0006b3;
 }
 
 #weather-info {
   margin-top: 20px;
+}
+
+#city-name {
+  padding: 5px;
+}
+
+#temperature {
+  padding: 5px;
+}
+
+#description {
+  padding: 5px;
 }
 
 .hidden {
